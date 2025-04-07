@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/Irshad-infracloud4/argocd-example-apps.git'
-    targetRevision: HEAD
+    targetRevision: feature1
     path: apps/monitoring
     helm:
       valueFiles:
