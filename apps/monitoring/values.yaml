@@ -1,0 +1,17 @@
+prometheus:
+  prometheusSpec:
+    replicas: 2
+    enableAdminAPI: true
+    serviceMonitorSelectorNilUsesHelmValues: false
+
+grafana:
+  enabled: true
+  adminPassword: prom-operator
+  service:
+    type: LoadBalancer
+
+prometheusOperator:
+  admissionWebhooks:
+    enabled: true
+    patch:
+      enabled: true

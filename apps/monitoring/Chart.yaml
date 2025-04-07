@@ -1,0 +1,7 @@
+apiVersion: v2
+name: monitoring
+version: 0.1.0
+dependencies:
+  - name: kube-prometheus-stack
+    version: 56.6.2 # check latest on artifacthub.io
+    repository: https://prometheus-community.github.io/helm-charts
