@@ -12,6 +12,9 @@ spec:
     helm:
       valueFiles:
         - values.yaml
+      parameters:
+        - name: "crds.create"
+          value: "true"
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: monitoring
